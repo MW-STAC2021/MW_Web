@@ -1,0 +1,47 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    border: 1px solid red;
+}
+
+.body {
+    width: 100%;
+}
+
+.nav-container {
+    position: absolute;
+    width: 100%;
+    height: 53px;
+    background: linear-gradient( to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.21) );;
+}
+
+.main-container {
+    width: 100%;
+    height: 1187px;
+    background-color: pink;
+}
+
+.service-container {
+    width: 100%;
+    height: 1187px;
+    background-color: blue;
+}
+
+.video-container {
+    width: 100%;
+    height: 1187px;
+    background-color: yellow;
+}
+
+.people-container {
+    width: 100%;
+    height: 1187px;
+    background-color: purple;
+}
+
+footer {
+    width: 100%;
+    height: 422px;
+    background-color: #FFE9E2;
+    color: rgba(0, 0, 0, 0.63);
+}
