@@ -9,10 +9,15 @@
 }
 
 .nav-container {
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 53px;
     background: linear-gradient( to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.21) );;
+}
+
+.nav-container a {
+    text-decoration: none;
+    color: #FFFFFF;
 }
 
 .main-container {
@@ -31,6 +36,12 @@
     width: 100%;
     height: 1187px;
     background-color: yellow;
+}
+
+.news-container {
+    width: 100%;
+    height: 1187px;
+    background-color: green;
 }
 
 .people-container {
