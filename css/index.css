@@ -1,18 +1,28 @@
 * {
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
-    border: 1px solid red;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
 }
 
-.body {
+body {
     width: 100%;
+    background: wheat;
+    float: left;
 }
 
 .nav-container {
+    top: 0;
     position: fixed;
-    width: 100%;
-    height: 53px;
+    width: 1080px;
+    height: 61px;
     background: linear-gradient( to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.21) );;
+    padding-left: 208px;
+    padding-right: 208px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .nav-container a {
@@ -20,39 +30,302 @@
     color: #FFFFFF;
 }
 
+.nav-container img {
+    width: 38px;
+    height: 38px;
+}
+
+.nav-container .logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.nav-container .logo-container a {
+    margin-left: 13px;
+    font-size: 13px;
+}
+
+.nav-container .link-container {
+    justify-self: flex-end;
+}
+
+.nav-container .link-container a {
+    margin-left: 20px;
+}
+
 .main-container {
     width: 100%;
-    height: 1187px;
+    height: 100vh;
     background-color: pink;
+    box-sizing: border-box;
+    padding-top: 173px;
+}
+
+.main-container .main-text-container {
+    margin-left: 208px;
+    width: fit-content;
+}
+
+.main-container .main-text-container p {
+    color: #FFFFFF;
+}
+
+.main-container .main-text-container .text1 {
+    font-size: 17px;
+}
+
+.main-container .main-text-container .text2 {
+    margin-top: 21px;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.main-container .main-text-container .text3 {
+    margin-top: 55px;
+    font-size: 12px;
 }
 
 .service-container {
     width: 100%;
-    height: 1187px;
-    background-color: blue;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+    padding-top: 86px;
+}
+
+.service-container .service {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.service-container .img-phone {
+    width: 224px;
+    height: 486px;
+    margin: 15px;
+}
+
+.service-container .img-crop {
+    width: 225px;
+    height: 228px;
+    margin: 15px;
+}
+
+.service-description-container {
+    margin: 8px;
+    height: fit-content;
+}
+
+.service-description-container .pink-background {
+    background-color: #FF9A75;
+    border-radius: 20px;
+    width: fit-content;
+    height: fit-content;
+    margin-bottom: 16px;
+}
+
+.service-description-container .pink-background p {
+    color: #FFFFFF;
+    margin: 12px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.service-description-container .service-description {
+    width: 184px;
+    color: rgba(89, 89, 89, 1);
+    font-size: 11px;
+}
+
+.service-description-container .service-description b {
+    font-weight: bold;
+    color: #595959;
+}
+
+.title-container {
+    margin-left: 208px;
+    width: fit-content;
+    height: fit-content;
+    padding-right: 27px;
+    padding-left: 27px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    border-radius: 20px;
+    border: #FF9A75 2px solid;
+}
+
+.title-container p {
+    color: #FF9A75;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .video-container {
     width: 100%;
-    height: 1187px;
+    height: 100vh;
     background-color: yellow;
+    box-sizing: border-box;
+    padding-top: 100px;
+}
+
+.video-container .videos {
+    display: flex;
+    margin-left: 208px;
+    margin-top: 50px;
+}
+
+.video-container video {
+    width: 326px;
+    height: 183px;
 }
 
 .news-container {
     width: 100%;
-    height: 1187px;
+    height: 100vh;
     background-color: green;
+    box-sizing: border-box;
+    padding-top: 80px;
+}
+
+.news-grid {
+    display: grid;
+    border: 1px solid red;
+    margin-left: 208px;
+    margin-right: 208px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+.news-grid .main-news {
+    grid-row-start: 1;
+	grid-row-end: 4;
+}
+
+.news-grid .main-news img {
+    width: 326px;
+    height: 225px;
+}
+
+.news-grid .main-news .news-title {
+    color: #FF9A75;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.news-grid .main-news .news-content {
+    font-size: 10px;
+}
+
+.news-grid a {
+    text-decoration: none;
+    display: block;
+}
+
+.news-grid .news {
+    display: flex;
+}
+
+.news-grid .news .news-title {
+    font-size: 13px;
+    font-weight: bold;
+    color: rgba(255, 154, 117, 0.64);
+}
+
+.news-grid .news .news-content {
+    font-size: 10px;
+    text-decoration: none;
+}
+
+.news-grid .news img {
+    width: 101px;
+    height: 61px;
 }
 
 .people-container {
     width: 100%;
-    height: 1187px;
-    background-color: purple;
+    box-sizing: border-box;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.peoples {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 208px;
+    margin-right: 208px;
+    justify-content: center;
+}
+
+.people {
+    display: inline-block;
+    margin-top: 40px;
+    width: 175px;
+    height: 283px;
+    background-color: rgba(255, 154, 117, 0.21);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 120px;
+}
+
+.people .people-name {
+    font-size: 13px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.people .people-position {
+    font-size: 12px;
+}
+
+.people .people-description {
+    color: #767676;
+    font-size: 9px;
+    margin: 7px;
+}
+
+.people img {
+    width: 138px;
+    height: 183px;
+    margin-bottom: 13px;
 }
 
 footer {
     width: 100%;
-    height: 422px;
+    height: 237px;
     background-color: #FFE9E2;
     color: rgba(0, 0, 0, 0.63);
+    box-sizing: border-box;
+    padding-top: 52px;
+    padding-left: 208px;
+}
+
+footer .school-location {
+    font-size: 14px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.63);
+}
+
+footer table {
+    margin-top: 33px;
+}
+
+footer table .school-part {
+    font-size: 14px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.63);
+}
+
+footer table .school-part-tel {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.63);
+}
+
+footer table td {
+    min-width: 337px;
+    margin-bottom: 10px;
 }
