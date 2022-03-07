@@ -8,7 +8,9 @@
 body {
     width: 100%;
     background: wheat;
-    float: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .nav-container {
@@ -145,7 +147,6 @@ body {
 }
 
 .title-container {
-    margin-left: 208px;
     width: fit-content;
     height: fit-content;
     padding-right: 27px;
@@ -154,6 +155,7 @@ body {
     padding-bottom: 9px;
     border-radius: 20px;
     border: #FF9A75 2px solid;
+    align-self: flex-start;
 }
 
 .title-container p {
@@ -163,26 +165,26 @@ body {
 }
 
 .video-container {
-    width: 100%;
+    width: 61.25%;
     height: 100vh;
     background-color: yellow;
     box-sizing: border-box;
     padding-top: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .video-container .videos {
     display: flex;
-    margin-left: 208px;
+    width: 61.25%;
     margin-top: 50px;
-}
+    justify-content: space-around;
 
-.video-container video {
-    width: 326px;
-    height: 183px;
 }
 
 .news-container {
-    width: 100%;
+    width: 61.25%;
     height: 100vh;
     background-color: green;
     box-sizing: border-box;
@@ -192,8 +194,6 @@ body {
 .news-grid {
     display: grid;
     border: 1px solid red;
-    margin-left: 208px;
-    margin-right: 208px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     justify-items: stretch;
@@ -246,7 +246,7 @@ body {
 }
 
 .people-container {
-    width: 100%;
+    width: 61.25%;
     box-sizing: border-box;
     padding-top: 80px;
     padding-bottom: 80px;
@@ -303,7 +303,12 @@ footer {
     color: rgba(0, 0, 0, 0.63);
     box-sizing: border-box;
     padding-top: 52px;
-    padding-left: 208px;
+    display: flex;
+    justify-content: center;
+}
+
+footer .footer-container {
+    width: 61.25%;
 }
 
 footer .school-location {
