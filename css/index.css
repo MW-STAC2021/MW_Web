@@ -17,11 +17,15 @@ body {
     top: 0;
     position: fixed;
     width: 100%;
-    height: 61px;
+    height: 107px;
     background: linear-gradient( to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.21) );;
-    padding-left: 208px;
-    padding-right: 208px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.nav-inner-container {
+    width: 61.25%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -34,8 +38,8 @@ body {
 }
 
 .nav-container img {
-    width: 38px;
-    height: 38px;
+    width: 68px;
+    height: 68px;
 }
 
 .nav-container .logo-container {
@@ -45,7 +49,8 @@ body {
 
 .nav-container .logo-container a {
     margin-left: 13px;
-    font-size: 13px;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .nav-container .link-container {
@@ -54,6 +59,7 @@ body {
 
 .nav-container .link-container a {
     margin-left: 20px;
+    font-size: 21px;
 }
 
 .main-container {
@@ -62,11 +68,12 @@ body {
     background-color: pink;
     box-sizing: border-box;
     padding-top: 173px;
+    display: flex;
+    justify-content: center;
 }
 
 .main-container .main-text-container {
-    margin-left: 208px;
-    width: fit-content;
+    width: 61.25%;
 }
 
 .main-container .main-text-container p {
@@ -74,18 +81,18 @@ body {
 }
 
 .main-container .main-text-container .text1 {
-    font-size: 17px;
+    font-size: 30px;
 }
 
 .main-container .main-text-container .text2 {
     margin-top: 21px;
-    font-size: 42px;
+    font-size: 80px;
     font-weight: bold;
 }
 
 .main-container .main-text-container .text3 {
     margin-top: 55px;
-    font-size: 12px;
+    font-size: 20px;
 }
 
 .service-container {
@@ -198,6 +205,7 @@ body {
     grid-template-rows: 1fr 1fr 1fr;
     justify-items: stretch;
     align-items: stretch;
+    margin-top: 50px;
 }
 
 .news-grid .main-news {
