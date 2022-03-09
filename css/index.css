@@ -7,7 +7,6 @@
 
 body {
     width: 100%;
-    background: wheat;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,6 +21,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
 
 .nav-inner-container {
@@ -65,11 +65,11 @@ body {
 .main-container {
     width: 100%;
     height: 100vh;
-    background-color: pink;
     box-sizing: border-box;
-    padding-top: 173px;
+    padding-top: 310px;
     display: flex;
     justify-content: center;
+    background-color: pink;
 }
 
 .main-container .main-text-container {
@@ -93,13 +93,14 @@ body {
 .main-container .main-text-container .text3 {
     margin-top: 55px;
     font-size: 20px;
+    line-height: 185.5%;
 }
 
 .service-container {
     width: 100%;
     background-color: #FFFFFF;
     box-sizing: border-box;
-    padding-top: 86px;
+    padding-top: 153px;
 }
 
 .service-container .service {
@@ -111,19 +112,19 @@ body {
 }
 
 .service-container .img-phone {
-    width: 224px;
-    height: 486px;
-    margin: 15px;
+    width: 400px;
+    height: 867px;
+    margin: 25px;
 }
 
 .service-container .img-crop {
-    width: 225px;
-    height: 228px;
-    margin: 15px;
+    width: 400px;
+    height: 406px;
+    margin: 25px;
 }
 
 .service-description-container {
-    margin: 8px;
+    margin: 15px;
     height: fit-content;
 }
 
@@ -132,20 +133,23 @@ body {
     border-radius: 20px;
     width: fit-content;
     height: fit-content;
-    margin-bottom: 16px;
+    margin-bottom: 27px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 19px;
+    padding-right: 19px;
 }
 
 .service-description-container .pink-background p {
     color: #FFFFFF;
-    margin: 12px;
-    font-size: 13px;
+    font-size: 22px;
     font-weight: bold;
 }
 
 .service-description-container .service-description {
-    width: 184px;
-    color: rgba(89, 89, 89, 1);
-    font-size: 11px;
+    width: 337px;
+    color: #595959;
+    font-size: 20px;
 }
 
 .service-description-container .service-description b {
@@ -156,25 +160,25 @@ body {
 .title-container {
     width: fit-content;
     height: fit-content;
-    padding-right: 27px;
-    padding-left: 27px;
-    padding-top: 9px;
-    padding-bottom: 9px;
-    border-radius: 20px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    border-radius: 41px;
     border: #FF9A75 2px solid;
     align-self: flex-start;
+    box-sizing: border-box;
 }
 
 .title-container p {
     color: #FF9A75;
-    font-size: 18px;
+    font-size: 32px;
     font-weight: bold;
 }
 
 .video-container {
     width: 61.25%;
     height: 100vh;
-    background-color: yellow;
     box-sizing: border-box;
     padding-top: 100px;
     display: flex;
@@ -185,22 +189,32 @@ body {
 .video-container .videos {
     display: flex;
     width: 61.25%;
-    margin-top: 50px;
-    justify-content: space-around;
+    margin-top: 68px;
+    justify-content: space-evenly;
+}
 
+.video-container .video-title {
+    font-size: 24px;
+    color: #FF9A75;
+    margin-top: 30px;
+    font-weight: 500;
+}
+
+.video-container .video-description {
+    margin-top: 30px;
+    color: #595959;
+    size: 18px;
 }
 
 .news-container {
     width: 61.25%;
     height: 100vh;
-    background-color: green;
     box-sizing: border-box;
     padding-top: 80px;
 }
 
 .news-grid {
     display: grid;
-    border: 1px solid red;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     justify-items: stretch;
@@ -211,25 +225,27 @@ body {
 .news-grid .main-news {
     grid-row-start: 1;
 	grid-row-end: 4;
+    margin-right: 20px;
 }
 
 .news-grid .main-news img {
-    width: 326px;
-    height: 225px;
+    width: 580px;
+    height: 401px;
 }
 
 .news-grid .main-news .news-title {
     color: #FF9A75;
-    font-size: 13px;
+    font-size: 24px;
     font-weight: bold;
 }
 
 .news-grid .main-news .news-content {
-    font-size: 10px;
+    font-size: 18px;
 }
 
 .news-grid a {
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-color: #FF9A75;
     display: block;
 }
 
@@ -238,41 +254,40 @@ body {
 }
 
 .news-grid .news .news-title {
-    font-size: 13px;
+    font-size: 24px;
     font-weight: bold;
     color: rgba(255, 154, 117, 0.64);
 }
 
 .news-grid .news .news-content {
-    font-size: 10px;
+    font-size: 18px;
     text-decoration: none;
 }
 
 .news-grid .news img {
-    width: 101px;
-    height: 61px;
+    width: 180px;
+    height: 109px;
+    margin-left: 20px;
 }
 
 .people-container {
     width: 61.25%;
     box-sizing: border-box;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 180px;
+    padding-bottom: 109px;
 }
 
 .peoples {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 208px;
-    margin-right: 208px;
     justify-content: center;
 }
 
 .people {
     display: inline-block;
-    margin-top: 40px;
-    width: 175px;
-    height: 283px;
+    margin-top: 68px;
+    width: 311px;
+    height: 504px;
     background-color: rgba(255, 154, 117, 0.21);
     display: flex;
     flex-direction: column;
@@ -283,34 +298,35 @@ body {
 }
 
 .people .people-name {
-    font-size: 13px;
+    font-size: 22px;
     font-weight: bold;
-    margin-right: 5px;
+    margin-right: 7px;
 }
 
 .people .people-position {
-    font-size: 12px;
+    font-size: 22px;
 }
 
 .people .people-description {
     color: #767676;
-    font-size: 9px;
+    font-size: 16px;
     margin: 7px;
+    text-align: center;
 }
 
 .people img {
-    width: 138px;
-    height: 183px;
-    margin-bottom: 13px;
+    min-width: 184px;
+    min-height: 184px;
+    margin-bottom: 27px;
 }
 
 footer {
     width: 100%;
-    height: 237px;
+    height: 422px;
     background-color: #FFE9E2;
     color: rgba(0, 0, 0, 0.63);
     box-sizing: border-box;
-    padding-top: 52px;
+    padding-top: 100px;
     display: flex;
     justify-content: center;
 }
@@ -320,27 +336,27 @@ footer .footer-container {
 }
 
 footer .school-location {
-    font-size: 14px;
+    font-size: 24px;
     font-weight: bold;
     color: rgba(0, 0, 0, 0.63);
 }
 
 footer table {
-    margin-top: 33px;
+    margin-top: 58px;
 }
 
 footer table .school-part {
-    font-size: 14px;
+    font-size: 24px;
     font-weight: bold;
     color: rgba(0, 0, 0, 0.63);
 }
 
 footer table .school-part-tel {
-    font-size: 14px;
+    font-size: 24px;
     color: rgba(0, 0, 0, 0.63);
 }
 
 footer table td {
-    min-width: 337px;
-    margin-bottom: 10px;
+    min-width: 590px;
+    padding-bottom: 18px;
 }
