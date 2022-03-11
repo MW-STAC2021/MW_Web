@@ -226,6 +226,7 @@ body {
 }
 
 .news-grid {
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: stretch;
@@ -238,11 +239,6 @@ body {
 	grid-row-end: 4;
     margin-right: 20px;
 }
-
-.news-grid .main-news img {
-    width: 100%;
-}
-
 .news-grid .main-news .news-title {
     color: #FF9A75;
     font-size: 24px;
@@ -265,6 +261,10 @@ body {
 
 .news-grid .news {
     display: flex;
+}
+
+.news-grid .news-text {
+    width: 55%;
 }
 
 .news-grid .news .news-title {
