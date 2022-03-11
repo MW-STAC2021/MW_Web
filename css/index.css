@@ -247,6 +247,10 @@ body {
     color: #FF9A75;
     font-size: 24px;
     font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 20px;
 }
 
 .news-grid .main-news .news-content {
@@ -267,6 +271,10 @@ body {
     font-size: 24px;
     font-weight: bold;
     color: rgba(255, 154, 117, 0.64);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 20px;
 }
 
 .news-grid .news .news-content {
