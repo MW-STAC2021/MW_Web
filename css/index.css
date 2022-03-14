@@ -225,21 +225,25 @@ body {
     padding-top: 80px;
 }
 
-.news-grid {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: stretch;
-    align-items: stretch;
+.news-flex {
+    display: flex;
     margin-top: 50px;
 }
 
-.news-grid .main-news {
-    grid-row-start: 1;
-	grid-row-end: 4;
+.news-flex a {
+    text-decoration: none;
+}
+
+.news-flex .main-news {
+    width: 50%;
     margin-right: 20px;
 }
-.news-grid .main-news .news-title {
+
+.news-flex .main-news img {
+    width: 100%;
+}
+
+.news-flex .main-news .news-title {
     color: #FF9A75;
     font-size: 24px;
     font-weight: bold;
@@ -247,27 +251,35 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
     margin-bottom: 20px;
+    margin-top: 12px;
 }
 
-.news-grid .main-news .news-content {
+.news-flex .main-news .news-content {
     font-size: 18px;
 }
 
-.news-grid a {
-    text-decoration: underline;
-    text-decoration-color: #FF9A75;
-    display: block;
-}
-
-.news-grid .news {
+.sub-news {
     display: flex;
+    flex-direction: column;
+    width: 50%;
 }
 
-.news-grid .news-text {
-    width: 55%;
+.sub-news .news {
+    display: flex;
+    height: 35%;
 }
 
-.news-grid .news .news-title {
+.sub-news hr {
+    color: #E5E5E5;
+    margin-bottom: 35px;
+    margin-top: 30px;
+}
+
+.sub-news .news .news-text {
+    width: 70%;
+}
+
+.sub-news .news .news-title {
     font-size: 24px;
     font-weight: bold;
     color: rgba(255, 154, 117, 0.64);
@@ -277,13 +289,12 @@ body {
     margin-bottom: 20px;
 }
 
-.news-grid .news .news-content {
-    font-size: 18px;
-    text-decoration: none;
+.sub-news .news img {
+    margin-left: 20px;
 }
 
-.news-grid .news img {
-    margin: 20px;
+.sub-news .news .news-text .news-content {
+    font-size: 18px;
 }
 
 .people-container {
