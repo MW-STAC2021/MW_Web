@@ -70,7 +70,8 @@ body {
     padding-top: 310px;
     display: flex;
     justify-content: center;
-    background-color: pink;
+    background-image: url("../image/mainpage.png");
+    background-size: cover;
 }
 
 .main-container .main-text-container {
