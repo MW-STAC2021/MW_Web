@@ -75,7 +75,7 @@ body {
 
 .main-container .main-text-container {
     position: absolute;
-    bottom: 20px;
+    bottom: 80px;
     width: 61.25%;
 }
 
@@ -94,7 +94,7 @@ body {
 }
 
 .main-container .main-text-container .text3 {
-    margin-top: 45px;
+    margin-top: 55px;
     font-size: 20px;
     line-height: 185.5%;
 }
